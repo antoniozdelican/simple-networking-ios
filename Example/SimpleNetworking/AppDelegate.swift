@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SimpleNetworking
+//  SimpleNetworking_Example
 //
 //  Created by antoniozdelican on 08/19/2021.
 //  Copyright (c) 2021 antoniozdelican. All rights reserved.

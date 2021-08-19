@@ -7,18 +7,18 @@
 
 import Foundation
 
-internal enum RequestMethod: String {
+public enum RequestMethod: String {
     case get = "GET"
     case post = "POST"
     case put = "PUT"
     case delete = "DELETE"
 }
 
-internal typealias RequestHeaders = [String: String]
-internal typealias RequestParameters = [String : Any?]
+public typealias RequestHeaders = [String: String]
+public typealias RequestParameters = [String : Any?]
 
 /// Protocol to which all APIRequests need to conform.
-internal protocol NetworkRequestProtocol {
+public protocol NetworkRequestProtocol {
     var baseUrl: String? { get }
     var path: String { get }
     var method: RequestMethod { get }
@@ -26,7 +26,7 @@ internal protocol NetworkRequestProtocol {
     var parameters: RequestParameters? { get }
 }
 
-internal extension NetworkRequestProtocol {
+extension NetworkRequestProtocol {
 
     func urlRequest() -> URLRequest? {
         guard let baseUrl = self.baseUrl, let url = url(with: baseUrl) else {

@@ -8,7 +8,7 @@
 import Foundation
 
 /// Enum of Network Errors
-internal enum NetworkError: LocalizedError {
+public enum NetworkError: LocalizedError {
     /// No data received from the server.
     case noData
     /// The server response was invalid (unexpected format).
@@ -25,9 +25,9 @@ internal enum NetworkError: LocalizedError {
     case unknown(String?)
 }
 
-internal extension NetworkError {
+extension NetworkError {
     
-    var errorDescription: String? {
+    public var errorDescription: String? {
         switch self {
         case .noData:
             return "No data error"

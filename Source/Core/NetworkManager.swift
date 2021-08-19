@@ -7,21 +7,21 @@
 
 import Foundation
 
-internal protocol NetworkManagerProtocol {
+public protocol NetworkManagerProtocol {
     init(networkSession: NetworkSessionProtocol)
     func execute(request: NetworkRequestProtocol, completion: @escaping (OperationResult) -> Void) -> URLSessionTask?
 }
 
 /// Handles the dispatch of requests with a given configuration.
-internal class NetworkManager: NetworkManagerProtocol {
+public class NetworkManager: NetworkManagerProtocol {
 
     private let networkSession: NetworkSessionProtocol
 
-    required init(networkSession: NetworkSessionProtocol) {
+    public required init(networkSession: NetworkSessionProtocol) {
         self.networkSession = networkSession
     }
 
-    func execute(request: NetworkRequestProtocol, completion: @escaping (OperationResult) -> Void) -> URLSessionTask? {
+    public func execute(request: NetworkRequestProtocol, completion: @escaping (OperationResult) -> Void) -> URLSessionTask? {
         guard let urlRequest = request.urlRequest() else {
             completion(.error(NetworkError.invalidUrl("\(request)"), nil))
             return nil

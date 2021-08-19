@@ -7,16 +7,16 @@
 
 import Foundation
 
-internal protocol NetworkSessionProtocol {
+public protocol NetworkSessionProtocol {
     func dataTask(with request: URLRequest, completion: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask?
 }
 
 /// Handles the creation of URLSession task.
-internal class NetworkSession: NetworkSessionProtocol {
+public class NetworkSession: NetworkSessionProtocol {
 
     private var session: URLSession!
     
-    init() {
+    public init() {
         let sessionConfiguration = URLSessionConfiguration.default
         sessionConfiguration.timeoutIntervalForResource = 30
         if #available(iOS 11, *) {
@@ -31,7 +31,7 @@ internal class NetworkSession: NetworkSessionProtocol {
         session = nil
     }
     
-    func dataTask(with request: URLRequest, completion: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask? {
+    public func dataTask(with request: URLRequest, completion: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask? {
         let dataTask = session.dataTask(with: request) { (data, response, error) in
             completion(data, response, error)
         }
