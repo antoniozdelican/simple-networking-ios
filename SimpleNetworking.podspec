@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   # s.resource_bundles = {
   #   'SimpleNetworking' => ['SimpleNetworking/Assets/*.png']
   # }
-#  s.test_spec 'SimpleNetworkingTests' do |test_spec|
-#    test_spec.source_files = 'Tests/SimpleNetworkingTests/**/*.{h,m,swift}'
-#  end
+  s.test_spec do |test_spec|
+    test_spec.source_files = 'Tests/**/*.{h,m,swift}'
+  end
 end

@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SimpleNetworking: 5a03174cf722510aed2184fc95bd96223fdafae0
+  SimpleNetworking: fc62901dd9d41b0d73f458e1286547f3abc5180b
 
 PODFILE CHECKSUM: d893bc780e1e2de1b06682255c4c1e9fa101cbd4
 

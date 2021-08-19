@@ -1,6 +1,6 @@
 //
 //  NetworkManager.swift
-//  PrimerCheckout
+//  SimpleNetworking
 //
 //  Created by Antonio Zdelican on 28.07.21.
 //

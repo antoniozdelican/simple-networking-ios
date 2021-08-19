@@ -20,5 +20,12 @@
     "ios": "12.0"
   },
   "source_files": "Source/**/*.{h,m,swift}",
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit",
+      "source_files": "Tests/**/*.{h,m,swift}"
+    }
+  ],
   "swift_version": "5.3"
 }

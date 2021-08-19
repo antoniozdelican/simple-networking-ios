@@ -1,6 +1,6 @@
 //
 //  Logger.swift
-//  PrimerCheckout
+//  SimpleNetworking
 //
 //  Created by Antonio Zdelican on 06.08.21.
 //
@@ -16,7 +16,7 @@ internal struct Logger {
             return
         }
         
-        var log: String = "\nPRIMER CHECKOUT "
+        var log: String = "\nSIMPLE CHECKOUT "
         
         /// LogLevel
         switch level {

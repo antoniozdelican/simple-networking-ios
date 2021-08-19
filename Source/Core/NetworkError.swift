@@ -1,6 +1,6 @@
 //
 //  NetworkError.swift
-//  PrimerCheckout
+//  SimpleNetworking
 //
 //  Created by Antonio Zdelican on 02.08.21.
 //
