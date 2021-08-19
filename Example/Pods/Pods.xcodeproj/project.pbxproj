@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		462B9C9836E1DCF124DF3FBAAB5C1034 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B980631ABC2A56733F8B223F623EE75 /* ReplaceMe.swift */; };
 		50EAB04AC75CFA282F71A59E0616D23F /* Pods-SimpleNetworking_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C906649006AE2B9C85947CC4E519368B /* Pods-SimpleNetworking_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CF9B346BB100A260C2D12CB4E0E7C4F /* Pods-SimpleNetworking_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8396BD56A253698806EA939D78F01B /* Pods-SimpleNetworking_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87113AD26741134938B259BFD0DDB67E /* Pods-SimpleNetworking_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C942ED8311836114EA40029F0A504D97 /* Pods-SimpleNetworking_Tests-dummy.m */; };
 		A50A9E3219343A3A641C40B3A757DE13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A9E82F9C26CE5E3B00ECC0E9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E82F9826CE5E3B00ECC0E9 /* NetworkManager.swift */; };
+		A9E82F9D26CE5E3B00ECC0E9 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E82F9926CE5E3B00ECC0E9 /* NetworkRequest.swift */; };
+		A9E82F9E26CE5E3B00ECC0E9 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E82F9A26CE5E3B00ECC0E9 /* NetworkOperation.swift */; };
+		A9E82F9F26CE5E3B00ECC0E9 /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E82F9B26CE5E3B00ECC0E9 /* NetworkSession.swift */; };
+		A9E82FA126CE5E8400ECC0E9 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E82FA026CE5E8400ECC0E9 /* NetworkError.swift */; };
 		AC825A688BB0E1CF4D5911A386CFE6A6 /* Pods-SimpleNetworking_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E95760C9DDB54BC2C32C6E523ECC23B /* Pods-SimpleNetworking_Example-dummy.m */; };
 		B0CEF402A838C25969C77467712B0189 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		DE869894CB253AF9F70CF209840A3C10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -37,15 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B980631ABC2A56733F8B223F623EE75 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SimpleNetworking/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		265FBFBC799F9FD262F68DBFC3503C76 /* SimpleNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleNetworking-umbrella.h"; sourceTree = "<group>"; };
 		35BB0925190C803E1065A414AFD5A33C /* SimpleNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleNetworking.release.xcconfig; sourceTree = "<group>"; };
 		36B32CA3D648D9DFF24B1A0B70675C44 /* Pods-SimpleNetworking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleNetworking_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3FF26A44C9004AACBBAC11C87FB1ED35 /* Pods_SimpleNetworking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SimpleNetworking_Example.framework; path = "Pods-SimpleNetworking_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF26A44C9004AACBBAC11C87FB1ED35 /* Pods_SimpleNetworking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleNetworking_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B1638B875233DDC09D6F6C674F1A64D /* Pods-SimpleNetworking_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SimpleNetworking_Tests.modulemap"; sourceTree = "<group>"; };
 		5EC6F6E4DC6A597E4B915D7F2A57BA50 /* Pods-SimpleNetworking_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleNetworking_Tests-Info.plist"; sourceTree = "<group>"; };
 		639CE7E6CBD09EC30B97036A9A6CA99F /* SimpleNetworking-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SimpleNetworking-Info.plist"; sourceTree = "<group>"; };
-		63BA4449A2E6A899B4B5AD58270CCC1E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		63BA4449A2E6A899B4B5AD58270CCC1E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		699A2D832E2EEBC479199AD457905515 /* SimpleNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleNetworking-prefix.pch"; sourceTree = "<group>"; };
 		6D87399B31B06AE88B436A63FA1D1DE3 /* Pods-SimpleNetworking_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleNetworking_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6E95760C9DDB54BC2C32C6E523ECC23B /* Pods-SimpleNetworking_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleNetworking_Example-dummy.m"; sourceTree = "<group>"; };
@@ -53,21 +56,26 @@
 		73BE5D7B56D561078B57A8DAB1FBC5BB /* Pods-SimpleNetworking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleNetworking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7A0D534DB0C6BC7C0F40A500378A026B /* Pods-SimpleNetworking_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleNetworking_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		8BDF1F92746CC6EFBC62DF486A049C71 /* Pods-SimpleNetworking_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleNetworking_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8C54B441473E8803ED79E82CC918C69F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8C54B441473E8803ED79E82CC918C69F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		92F98B443E20B9CC1DF040FE09D8486A /* Pods-SimpleNetworking_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SimpleNetworking_Example.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A9E82F9826CE5E3B00ECC0E9 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = SimpleNetworking/Classes/NetworkManager.swift; sourceTree = "<group>"; };
+		A9E82F9926CE5E3B00ECC0E9 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkRequest.swift; path = SimpleNetworking/Classes/NetworkRequest.swift; sourceTree = "<group>"; };
+		A9E82F9A26CE5E3B00ECC0E9 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkOperation.swift; path = SimpleNetworking/Classes/NetworkOperation.swift; sourceTree = "<group>"; };
+		A9E82F9B26CE5E3B00ECC0E9 /* NetworkSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkSession.swift; path = SimpleNetworking/Classes/NetworkSession.swift; sourceTree = "<group>"; };
+		A9E82FA026CE5E8400ECC0E9 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkError.swift; path = SimpleNetworking/Classes/NetworkError.swift; sourceTree = "<group>"; };
 		B091A8F905433DF4C7C873B6F55EA8A2 /* SimpleNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleNetworking.debug.xcconfig; sourceTree = "<group>"; };
 		B73D2D0619EBEA396498E1282B7F4FFD /* Pods-SimpleNetworking_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleNetworking_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B83E273215274C305E4742BCCD913F27 /* Pods-SimpleNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B9E6C55E55FD63BBD7987AF44960D1F0 /* SimpleNetworking.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SimpleNetworking.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B9E6C55E55FD63BBD7987AF44960D1F0 /* SimpleNetworking.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SimpleNetworking.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BEF9F2F88AB1A4499F51F5BCE82F5417 /* Pods-SimpleNetworking_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleNetworking_Example-frameworks.sh"; sourceTree = "<group>"; };
-		C71B7C25C653D760A181BCEA45C17517 /* Pods_SimpleNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SimpleNetworking_Tests.framework; path = "Pods-SimpleNetworking_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C71B7C25C653D760A181BCEA45C17517 /* Pods_SimpleNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleNetworking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C906649006AE2B9C85947CC4E519368B /* Pods-SimpleNetworking_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleNetworking_Example-umbrella.h"; sourceTree = "<group>"; };
 		C942ED8311836114EA40029F0A504D97 /* Pods-SimpleNetworking_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleNetworking_Tests-dummy.m"; sourceTree = "<group>"; };
 		D6C1E7760CAA5254362D8017FEBE8654 /* SimpleNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleNetworking-dummy.m"; sourceTree = "<group>"; };
 		E4C62C903E2F68AD4F4EDFA500BF0753 /* SimpleNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SimpleNetworking.modulemap; sourceTree = "<group>"; };
 		EA8396BD56A253698806EA939D78F01B /* Pods-SimpleNetworking_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleNetworking_Tests-umbrella.h"; sourceTree = "<group>"; };
-		F285B2915E9DFC3D9CC9FEEFE2B43EF6 /* SimpleNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimpleNetworking.framework; path = SimpleNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F285B2915E9DFC3D9CC9FEEFE2B43EF6 /* SimpleNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55AEEA69899638CB4B8FE6D59FE8B73 /* Pods-SimpleNetworking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleNetworking_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F8DF415066D01B7DFF02D70C32E00E87 /* Pods-SimpleNetworking_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleNetworking_Example-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,7 +207,11 @@
 		E86BF925E935795AE9D9A63011D8012A /* SimpleNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				0B980631ABC2A56733F8B223F623EE75 /* ReplaceMe.swift */,
+				A9E82F9826CE5E3B00ECC0E9 /* NetworkManager.swift */,
+				A9E82F9A26CE5E3B00ECC0E9 /* NetworkOperation.swift */,
+				A9E82F9926CE5E3B00ECC0E9 /* NetworkRequest.swift */,
+				A9E82F9B26CE5E3B00ECC0E9 /* NetworkSession.swift */,
+				A9E82FA026CE5E8400ECC0E9 /* NetworkError.swift */,
 				5A472918359F8EC2A34799D6E7343763 /* Pod */,
 				C432BF16DDF42EBB91DDEC421F572979 /* Support Files */,
 			);
@@ -367,7 +379,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				462B9C9836E1DCF124DF3FBAAB5C1034 /* ReplaceMe.swift in Sources */,
+				A9E82F9C26CE5E3B00ECC0E9 /* NetworkManager.swift in Sources */,
+				A9E82F9E26CE5E3B00ECC0E9 /* NetworkOperation.swift in Sources */,
+				A9E82F9F26CE5E3B00ECC0E9 /* NetworkSession.swift in Sources */,
+				A9E82FA126CE5E8400ECC0E9 /* NetworkError.swift in Sources */,
+				A9E82F9D26CE5E3B00ECC0E9 /* NetworkRequest.swift in Sources */,
 				FF5EA72408AFA56F2CA8D80B38C887E9 /* SimpleNetworking-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -718,8 +734,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
