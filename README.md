@@ -22,7 +22,7 @@ pod 'SimpleNetworking'
 
 ## Author
 
-antoniozdelican, antonio.zdelican@sunhill-technologies.com
+antoniozdelican, antonio.zdelican@gmail.com
 
 ## License
 
