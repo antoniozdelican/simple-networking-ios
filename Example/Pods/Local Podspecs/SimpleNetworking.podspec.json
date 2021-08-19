@@ -1,0 +1,31 @@
+{
+  "name": "SimpleNetworking",
+  "version": "1.0.0",
+  "summary": "SimpleNetworking iOS SDK",
+  "description": "This library contains networking wrapper classes for URLSession. Install this Cocoapod to integrate the SimpleNetworking in your iOS app.",
+  "homepage": "https://github.com/antoniozdelican/SimpleNetworking",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "antoniozdelican": "antonio.zdelican@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/antoniozdelican/SimpleNetworking.git",
+    "tag": "1.0.0"
+  },
+  "swift_versions": "5.3",
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source_files": "Source/**/*.{h,m,swift}",
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit",
+      "source_files": "Tests/**/*.{h,m,swift}"
+    }
+  ],
+  "swift_version": "5.3"
+}
