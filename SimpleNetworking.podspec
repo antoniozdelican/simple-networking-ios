@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.swift_version = "5.3"
   s.ios.deployment_target = '12.0'
 
-  s.source_files = 'SimpleNetworking/Classes/**/*'
+  s.source_files = 'Source/**/*.{h,m,swift}'
   
   # s.resource_bundles = {
   #   'SimpleNetworking' => ['SimpleNetworking/Assets/*.png']

@@ -1,5 +1,5 @@
 PODS:
-  - SimpleNetworking (0.1.0)
+  - SimpleNetworking (1.0.0)
 
 DEPENDENCIES:
   - SimpleNetworking (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SimpleNetworking: a310999f6955ec26c2ed7f91a339c694c150c095
+  SimpleNetworking: 5a03174cf722510aed2184fc95bd96223fdafae0
 
-PODFILE CHECKSUM: fb4bd0c49d6405b28fd6b881e10cec9959eb6b76
+PODFILE CHECKSUM: d893bc780e1e2de1b06682255c4c1e9fa101cbd4
 
 COCOAPODS: 1.10.1
