@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -16,8 +15,10 @@
 		698166A47B68EB2F74E01A0E /* Pods_SimpleNetworking_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C91BF6711BEF8A4D92320ACC /* Pods_SimpleNetworking_Tests.framework */; };
 		7CB81A3793616295C20F492B /* Pods_SimpleNetworking_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6B2200D72D02BE63F1EAFF /* Pods_SimpleNetworking_Example.framework */; };
 		A9E82FA526CE6EFA00ECC0E9 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E82FA426CE6EFA00ECC0E9 /* APIRequest.swift */; };
-		A9E82FA826CE6F1800ECC0E9 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E82FA726CE6F1800ECC0E9 /* APIManager.swift */; };
-		A9E82FAA26CE7B8D00ECC0E9 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E82FA926CE7B8D00ECC0E9 /* APIService.swift */; };
+		A9F9E86126CF90CF002B8659 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F9E86026CF90CF002B8659 /* MainViewController.swift */; };
+		A9F9E86326CF90DB002B8659 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F9E86226CF90DB002B8659 /* DetailViewController.swift */; };
+		A9F9E86726CF92B8002B8659 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F9E86626CF92B8002B8659 /* MainViewModel.swift */; };
+		A9F9E86F26CF9F3E002B8659 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F9E86E26CF9F3E002B8659 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 		607FACD01AFB9204008FA782 /* SimpleNetworking_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleNetworking_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -47,8 +47,10 @@
 		88CFF181E6F196AD513B9A6A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A43BADFDB122157E8DA84D72 /* Pods-SimpleNetworking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleNetworking_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleNetworking_Tests/Pods-SimpleNetworking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A9E82FA426CE6EFA00ECC0E9 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
-		A9E82FA726CE6F1800ECC0E9 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		A9E82FA926CE7B8D00ECC0E9 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		A9F9E86026CF90CF002B8659 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A9F9E86226CF90DB002B8659 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A9F9E86626CF92B8002B8659 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		A9F9E86E26CF9F3E002B8659 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		B1E91A36DF4A2111229E0706 /* Pods-SimpleNetworking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleNetworking_Example.debug.xcconfig"; path = "Target Support Files/Pods-SimpleNetworking_Example/Pods-SimpleNetworking_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BFFE01109F0C4E3A9706EE86 /* Pods-SimpleNetworking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleNetworking_Example.release.xcconfig"; path = "Target Support Files/Pods-SimpleNetworking_Example/Pods-SimpleNetworking_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C91BF6711BEF8A4D92320ACC /* Pods_SimpleNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleNetworking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,8 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				A9F9E86526CF921A002B8659 /* UI */,
 				A9E82FA626CE6F0B00ECC0E9 /* API */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -158,11 +160,36 @@
 		A9E82FA626CE6F0B00ECC0E9 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				A9E82FA926CE7B8D00ECC0E9 /* APIService.swift */,
-				A9E82FA726CE6F1800ECC0E9 /* APIManager.swift */,
 				A9E82FA426CE6EFA00ECC0E9 /* APIRequest.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		A9F9E85E26CF8AB8002B8659 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A9F9E86026CF90CF002B8659 /* MainViewController.swift */,
+				A9F9E86626CF92B8002B8659 /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A9F9E86426CF9211002B8659 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A9F9E86226CF90DB002B8659 /* DetailViewController.swift */,
+				A9F9E86E26CF9F3E002B8659 /* DetailViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		A9F9E86526CF921A002B8659 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A9F9E85E26CF8AB8002B8659 /* Main */,
+				A9F9E86426CF9211002B8659 /* Detail */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		CA0EBE0B0B905BE59261760D /* Pods */ = {
@@ -348,11 +375,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9E82FA826CE6F1800ECC0E9 /* APIManager.swift in Sources */,
-				A9E82FAA26CE7B8D00ECC0E9 /* APIService.swift in Sources */,
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				A9F9E86726CF92B8002B8659 /* MainViewModel.swift in Sources */,
+				A9F9E86126CF90CF002B8659 /* MainViewController.swift in Sources */,
 				A9E82FA526CE6EFA00ECC0E9 /* APIRequest.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				A9F9E86326CF90DB002B8659 /* DetailViewController.swift in Sources */,
+				A9F9E86F26CF9F3E002B8659 /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

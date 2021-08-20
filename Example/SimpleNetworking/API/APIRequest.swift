@@ -57,7 +57,7 @@ extension APIRequest {
     
     var headers: RequestHeaders? {
         let headers: RequestHeaders = [
-            "Content-Type" : "application/json"
+            "Accept" : "application/json"
         ]
         return headers
     }
@@ -69,6 +69,19 @@ extension APIRequest {
              .putExample,
              .deleteExample:
             return nil
+        }
+    }
+    
+    var title: String {
+        switch self {
+        case .getExample:
+            return "GET Request"
+        case .postExample:
+            return "POST Request"
+        case .putExample:
+            return "PUT Request"
+        case .deleteExample:
+            return "DELETE Request"
         }
     }
     
