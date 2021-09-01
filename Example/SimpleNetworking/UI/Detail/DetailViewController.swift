@@ -149,8 +149,12 @@ extension DetailViewController {
         case .headers:
             return tableView.rowHeight
         case .body:
-            return 300
+            return UITableViewAutomaticDimension
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }
