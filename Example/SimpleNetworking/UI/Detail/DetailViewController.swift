@@ -11,6 +11,7 @@ import UIKit
 class DetailViewController: UITableViewController {
     
     private lazy var viewModel: DetailViewModel = DetailViewModel()
+    private weak var activityIndicatorView: UIActivityIndicatorView?
     
     // TODO: remove somewhere else
     var request: APIRequest? {
@@ -45,6 +46,11 @@ class DetailViewController: UITableViewController {
         configureUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        activityIndicatorView?.startAnimating()
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         callApi()
@@ -53,6 +59,10 @@ class DetailViewController: UITableViewController {
     private func configureUI() {
         tableView.tableFooterView = UIView()
         navigationController?.navigationBar.isTranslucent = false
+        
+        let activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        tableView.backgroundView = activityIndicatorView
+        self.activityIndicatorView = activityIndicatorView
     }
     
     @objc
@@ -83,6 +93,7 @@ class DetailViewController: UITableViewController {
             
             self.tableView.reloadData()
             self.refreshControl?.endRefreshing()
+            self.activityIndicatorView?.stopAnimating()
         })
     }
 
