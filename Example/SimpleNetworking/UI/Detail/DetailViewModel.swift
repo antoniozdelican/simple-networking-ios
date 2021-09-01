@@ -20,7 +20,6 @@ class DetailViewModel {
         Section.headers,
         Section.body
     ]
-    
     private let networkManager: NetworkManager
 
     init() {

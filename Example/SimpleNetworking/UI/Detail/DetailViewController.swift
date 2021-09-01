@@ -13,7 +13,6 @@ class DetailViewController: UITableViewController {
     private lazy var viewModel: DetailViewModel = DetailViewModel()
     private weak var activityIndicatorView: UIActivityIndicatorView?
     
-    // TODO: remove somewhere else
     var request: APIRequest? {
         didSet {
             title = request?.title
@@ -23,7 +22,7 @@ class DetailViewController: UITableViewController {
             elapsedTime = nil
         }
     }
-    
+
     private var headers: [String: String] = [:]
     private var body: String?
     private var elapsedTime: TimeInterval?
